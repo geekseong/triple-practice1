@@ -22,7 +22,7 @@ public class Problem {
         return search(this.N - 1, this.M);
     }
 
-    // n번째 장소에서 남은 시간이 leftTime일 경우의 만족도.
+    // n번째 장소까지 확인했을때, 남은 시간이 leftTime일 경우의 만족도.
     private int search(int n, int leftTime){
         if( n < 0 )
             return 0;
