@@ -20,6 +20,7 @@ public class Main {
         System.out.println(answer);
     }
 
+    // 사용자 입력 매서드
     private static Problem input(){
         try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
             String[] split = reader.readLine().split(DELIMITER_SPACE);
@@ -38,10 +39,12 @@ public class Main {
         }
     }
 
+    // String -> int로 파싱
     private static int parseInt(String num) {
         return Integer.parseInt(num);
     }
 
+    //테스트 수행
     private static void test(){
         List<TestCase> testCases = getTestCaseSet();
         for (TestCase testCase : testCases) {
@@ -49,6 +52,8 @@ public class Main {
         }
     }
 
+    
+    // 테스트 케이스 정리
     private static List<TestCase> getTestCaseSet(){
 
         List<TestCase> testSet = new ArrayList<>();

@@ -1,5 +1,8 @@
 package com.triple;
 
+/**
+ * 장소에 대한 Value 클래스
+ */
 public class Place {
     private final String name;
     private final int spendTime;

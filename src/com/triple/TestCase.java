@@ -3,6 +3,11 @@ package com.triple;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 테스트 케이스 클래스
+ * 문제, 문제의 정답을 필드로 저장
+ * 알고리즘을 돌린 결과 값과 비교하여 정답, 오답 출력.
+ */
 public class TestCase {
 
     private final static String CORRECT_ANSWER_TEMPLATE = "[PASS] expected : %s, answer : %s";

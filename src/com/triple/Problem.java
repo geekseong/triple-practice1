@@ -3,6 +3,9 @@ package com.triple;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * 문제의 입력과 알고리즘을 포함한 클래스
+ */
 public class Problem {
     private final static int INF = Integer.MIN_VALUE;
     private final int N, M;
@@ -23,6 +26,7 @@ public class Problem {
         return solution2(this.N - 1, this.M);
     }
 
+    // 제귀함수 방식으로 구현
     // n번째 장소까지 확인했을때, 남은 시간이 leftTime일 경우의 만족도.
     private int solution1(final int n, final int leftTime){
         if( n < 0 )
@@ -47,6 +51,7 @@ public class Problem {
         return this.scoreTable[n][leftTime] = Math.max(choose, notChoose);
     }
 
+    // 테이블을 순회하는 방식으로 구현
     // n번째 장소까지 확인했을때, 남은 시간이 leftTime일 경우의 만족도.
     private int solution2(final int n, final int leftTime) {
 
